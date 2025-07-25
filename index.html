@@ -9,15 +9,15 @@
 
         body {
             font-family: 'Orbitron', sans-serif;
-            background: radial-gradient(circle at center, #002200 0%, #000000 100%);
-            color: #EDEDED;
+            background-color: #EDEDED;
+            color: #000000;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
         header {
-            padding: 12px 10px 6px;
+            padding: 20px 10px 10px;
             background-color: transparent;
         }
 
@@ -26,75 +26,75 @@
         }
 
         header .image {
-            width: 55px;
+            width: 70px;
             height: auto;
         }
 
         header h1 {
-            font-size: 18px;
-            margin-top: 6px;
-            color: #ffffff;
-            letter-spacing: 0.5px;
+            font-size: 24px;
+            margin-top: 10px;
+            color: #000000;
+            letter-spacing: 1px;
             font-weight: 700;
         }
 
         .unique-frame {
-            margin: 16px auto;
-            padding: 10px;
-            background: #003300;
-            border: 3px solid #654321;
-            border-radius: 14px;
-            width: 92%;
-            max-width: 340px;
-            color: #fff;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ffffff;
+            border: 4px solid #b5b5b5;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 400px;
+            color: #000000;
         }
 
         .unique-frame h2 {
-            font-size: 16px;
-            margin-bottom: 4px;
+            font-size: 18px;
+            margin-bottom: 5px;
         }
 
         .unique-frame p {
-            font-size: 13px;
+            font-size: 14px;
             margin: 0;
-            color: #ccc;
+            color: #333;
         }
 
         .rules-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 16px;
-            margin: 16px 0 80px;
+            gap: 20px;
+            margin: 20px 0 80px;
         }
 
         .rule {
-            padding: 12px;
-            background: #003300;
-            border: 3px solid #654321;
-            border-radius: 14px;
-            width: 92%;
-            max-width: 340px;
-            color: #fff;
+            padding: 15px;
+            background: #ffffff;
+            border: 4px solid #b5b5b5;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 400px;
+            color: #000000;
         }
 
         .rule h3 {
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         .rule .subtitle {
-            font-size: 13px;
-            color: #ddd;
-            margin-bottom: 8px;
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 10px;
         }
 
         .billiard-table {
             position: relative;
-            background: #006400;
-            padding: 8px;
-            border: 6px solid #3a2f1b;
-            border-radius: 14px;
+            background: #c4a484;
+            padding: 10px;
+            border: 8px solid #8b5a2b;
+            border-radius: 16px;
             width: fit-content;
             margin: 0 auto;
         }
@@ -103,44 +103,44 @@
         .billiard-table::after {
             content: '';
             position: absolute;
-            width: 12px;
-            height: 12px;
-            background: black;
+            width: 14px;
+            height: 14px;
+            background: #222;
             border-radius: 50%;
         }
 
-        .billiard-table::before { top: -6px; left: -6px; }
-        .billiard-table::after { top: -6px; right: -6px; }
-        .billiard-table .pocket.bl { bottom: -6px; left: -6px; }
-        .billiard-table .pocket.br { bottom: -6px; right: -6px; }
-        .billiard-table .pocket.ml { bottom: -6px; left: 50%; transform: translateX(-50%); }
-        .billiard-table .pocket.mt { top: -6px; left: 50%; transform: translateX(-50%); }
+        .billiard-table::before { top: -7px; left: -7px; }
+        .billiard-table::after { top: -7px; right: -7px; }
+        .billiard-table .pocket.bl { bottom: -7px; left: -7px; }
+        .billiard-table .pocket.br { bottom: -7px; right: -7px; }
+        .billiard-table .pocket.ml { bottom: -7px; left: 50%; transform: translateX(-50%); }
+        .billiard-table .pocket.mt { top: -7px; left: 50%; transform: translateX(-50%); }
 
         .billiard-table video {
-            width: 210px;
+            width: 250px;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
         .rule p {
-            font-size: 11px;
-            color: #bbb;
-            margin-top: 8px;
+            font-size: 12px;
+            color: #444;
+            margin-top: 10px;
         }
 
         footer {
-            background-color: #000;
-            color: #b0b0b0;
-            padding: 8px;
-            font-size: 11px;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px;
+            font-size: 12px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            border-top: 1px solid #333;
+            border-top: 1px solid #aaa;
         }
 
         footer span {
-            color: #b0b0b0;
+            color: #333;
             font-weight: normal;
         }
     </style>
