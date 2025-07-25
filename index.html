@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billiard Tournament</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at center, #002200 0%, #000000 100%);
+            color: #EDEDED;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px 10px 10px;
+            background-color: transparent;
+        }
+
+        header .image-container {
+            display: inline-block;
+        }
+
+        header .image {
+            width: 100px;
+            height: auto;
+            filter: drop-shadow(0 0 5px #00ffcc);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-top: 10px;
+            color: #00ffcc;
+            letter-spacing: 2px;
+        }
+
+        .unique-frame {
+            margin: 30px auto;
+            padding: 20px;
+            background: #003300;
+            border: 8px solid #654321;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
+            color: #fff;
+        }
+
+        .unique-frame h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .unique-frame p {
+            font-size: 16px;
+            margin: 0;
+            color: #ccc;
+        }
+
+        .rules-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .rule {
+            padding: 20px;
+            background: #003300;
+            border: 8px solid #654321;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+            color: #fff;
+        }
+
+        .rule h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .rule .subtitle {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .billiard-table {
+            position: relative;
+            background: #006400;
+            padding: 20px;
+            border: 12px solid #654321;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .billiard-table::before,
+        .billiard-table::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .billiard-table::before { top: -10px; left: -10px; }
+        .billiard-table::after { top: -10px; right: -10px; }
+        .billiard-table .pocket.bl { bottom: -10px; left: -10px; }
+        .billiard-table .pocket.br { bottom: -10px; right: -10px; }
+        .billiard-table .pocket.ml { bottom: -10px; left: 50%; transform: translateX(-50%); }
+        .billiard-table .pocket.mt { top: -10px; left: 50%; transform: translateX(-50%); }
+
+        .billiard-table video {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .rule p {
+            font-size: 14px;
+            color: #bbb;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #EDEDED;
+            padding: 12px;
+            font-size: 13px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 1px solid #00ffcc44;
+        }
+
+        @media (max-width: 768px) {
+            .rule, .unique-frame {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <img src="logo.png" alt="Tournament Logo" class="image">
+        </div>
+        <h1>Royal Group</h1>
+    </header>
+
+    <div class="unique-frame">
+        <h2>Billiard League</h2>
+        <p>Match Rules and Rounds</p>
+    </div>
+
+    <section class="rules-container">
+        <div class="rule">
+            <h3>Round 1</h3>
+            <div class="subtitle">Straight Pool<br><br>بول المباشر</div>
+            <div class="billiard-table">
+                <div class="pocket bl"></div>
+                <div class="pocket br"></div>
+                <div class="pocket ml"></div>
+                <div class="pocket mt"></div>
+                <video controls>
+                    <source src="billiard1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>8-Ball • 1 vs 1 • 5 Racks</p>
+        </div>
+
+        <div class="rule">
+            <h3>Round 2</h3>
+            <div class="subtitle">Bank Shots Only<br><br>تسديدات البنط فقط</div>
+            <div class="billiard-table">
+                <div class="pocket bl"></div>
+                <div class="pocket br"></div>
+                <div class="pocket ml"></div>
+                <div class="pocket mt"></div>
+                <video controls>
+                    <source src="billiard2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>9-Ball • 1 vs 1 • 5 Racks</p>
+        </div>
+
+        <div class="rule">
+            <h3>Semi Final</h3>
+            <div class="subtitle">Combo Master<br><br>الضربات المتتابعة</div>
+            <div class="billiard-table">
+                <div class="pocket bl"></div>
+                <div class="pocket br"></div>
+                <div class="pocket ml"></div>
+                <div class="pocket mt"></div>
+                <video controls>
+                    <source src="billiard3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>10-Ball • 1 vs 1 • 7 Racks</p>
+        </div>
+
+        <div class="rule">
+            <h3>Final Match</h3>
+            <div class="subtitle">Mixed Challenge<br><br>تحدي شامل (بنك / كومبو / تسديدة طويلة)</div>
+            <div class="billiard-table">
+                <div class="pocket bl"></div>
+                <div class="pocket br"></div>
+                <div class="pocket ml"></div>
+                <div class="pocket mt"></div>
+                <video controls>
+                    <source src="billiard4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>Mixed Rules • 1 vs 1 • Race to 9</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Royal Group
+    </footer>
+</body>
+</html>
